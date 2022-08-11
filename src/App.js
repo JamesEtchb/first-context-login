@@ -9,7 +9,9 @@ function App() {
   const [user, setUser] = useState(null)
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   return (
-    <UserInfoContext.Provider value={{ user, setUser, isLoggedIn, setIsLoggedIn}} >
+    <UserInfoContext.Provider
+      value={{ user, setUser, isLoggedIn, setIsLoggedIn }}
+    >
       <Menubar />
       <Hero />
     </UserInfoContext.Provider>
